@@ -14,7 +14,7 @@
 Step 1: Turn on terminal.
 
 Step 2: To compile a imgprocess.cpp file, using this command:
-- <code>g++ try2.cpp -o output `pkg-config --cflags --libs opencv4`</code>
+- <code>g++ imgprocess.cpp -o output `pkg-config --cflags --libs opencv4`</code>
 
 Step 3: To run file, using this command:
 - <code>./output</code>  
