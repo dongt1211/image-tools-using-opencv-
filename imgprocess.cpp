@@ -1,9 +1,5 @@
-#include<opencv2/imgcodecs.hpp>
-#include <opencv2/highgui.hpp>
 #include <bits/stdc++.h>
-#include <opencv2/core.hpp>
-#include <opencv2/imgproc.hpp>
-#include <opencv2/objdetect.hpp>
+#include <opencv2/opencv.hpp>
 
 using namespace std;
 using namespace cv;
@@ -148,7 +144,7 @@ void CallbackForTrackBar(int ,void*)
      CallbackForTrackBar(iDummy,&iDummy);
  //control clr detect
   namedWindow("Control", cv::WINDOW_AUTOSIZE); 
-       createTrackbar("LowH", "Control", &iLowH, 179),CallbackForTrackBar; //Hue (0 - 179)
+ createTrackbar("LowH", "Control", &iLowH, 179),CallbackForTrackBar; //Hue (0 - 179)
  createTrackbar("HighH", "Control", &iHighH, 179,CallbackForTrackBar);
 
  createTrackbar("LowS", "Control", &iLowS, 255,CallbackForTrackBar); //Saturation (0 - 255)
@@ -161,3 +157,4 @@ void CallbackForTrackBar(int ,void*)
    return 0;
 }
 //g++ try2.cpp -o output `pkg-config --cflags --libs opencv4`
+
